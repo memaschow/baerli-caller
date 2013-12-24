@@ -15,3 +15,12 @@ test:
   #username: cashflow
   username: michael
   password: 
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: shift_app_development
+  pool: 5
+  #username: cashflow
+  username: michael
+  password: 
