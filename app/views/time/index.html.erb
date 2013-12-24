@@ -1,0 +1,39 @@
+
+<div class="container" style="color:white;">
+
+<h1><strong>Mausi und Baerli V1.1 - here we go :-)</h1> 
+</br> So viele schöne Stunden läuft die Weihnachtsgeschichte schon ... <div id="timer">
+        </strong>
+
+
+
+
+</div>
+
+<div class="container">
+<h2>Das ist dein erste Hilfe Kasten für Mischa-freie Tage </h2>
+<p> Wehnn Du mal alleine bist, gibt es hier ein paar Pflaster, die dich wieder munter machen  </p>
+<a href="#" > Nur bissl gestresst </a><br>
+<a href="#" > Er kann mir ruhig mal schreiben... </a><br>
+<a href="#" > Er kann sich ruhig auch mal melden und mir gute Nacht wünschen... </a><br>
+<a href="#" > Er kann mich ruhig auch mal anruffffennn!!!!! (Sehr gestresst) </a><br>
+</div>
+
+
+<script>
+setInterval(function() {
+  var today = new Date();
+var Christmas = new Date("12-26-2012");
+var diffMs = (Christmas - today); // milliseconds between now & Christmas
+var diffDays = Math.round(diffMs / 86400000); // days
+var diffHrs = Math.round((diffMs % 86400000) / 3600000); // hours
+var diffMins = Math.round(((diffMs % 86400000) % 3600000) / 60000); // minutes
+var diffSec = Math.round(((diffMs % 86400000) % 60000) / 1000); // seconds
+
+
+
+ 
+    $('#timer').html((Math.abs(diffDays)) + " Tage | " + (Math.abs(diffHrs)) + " Stunden | " + (Math.abs(diffMins)) + " Minuten | " + (Math.abs(diffSec)) + " Sekunden | ");
+  }, 1000);
+  
+</script>
